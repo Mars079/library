@@ -1,0 +1,245 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #680707;
+}
+
+span{
+    font-size: 18px;
+    color: peachpuff;
+    display: block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+}
+#h1{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#h1-cell{
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+.btn{
+height: 30px;
+margin-top: -2px;
+margin-left: 5px;
+padding-top: 0;
+}
+
+.child textarea{
+    max-width: 90%;
+    width: 500px;
+    height: 238px;
+    max-height: 238px;
+    transition: all 0.5s;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+select{
+    height: 30px;
+}
+section{
+    position: relative;
+    top: 120px;
+    height: 530px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #720b0b;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+
+.span{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+
+.log-icons{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px; margin-right: 20px;
+    position: relative;
+}
+.child{
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 8% auto;
+    min-height: 350px;
+    border-radius: 5px;
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.child p{
+    display: block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: peachpuff;
+    font-size: 1.3rem;
+
+}
+.col-sm{
+    position: relative;
+    top: 30px;
+    width: 170px;
+    height: 230px;
+    min-width: auto;
+    min-height: auto;
+    background-color: rgb(134, 21, 21);
+    box-shadow: 0px 0px 0px 3px #000000;
+    margin: 0 auto;
+}
+
+.col-sm h1{
+    font-weight: bold;
+    display: block;
+    padding-top: 80px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: peachpuff;
+}
+
+.log-icons a{
+    margin-left: 20px;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+li a{
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    border-bottom: 3px solid #d2c5c5;
+}
+
+li a:hover{
+    color: rgb(189, 173, 173);
+    text-decoration: none;
+}
+
+
+.container{
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+    border: 3px solid transparent;
+    height: 300px;
+    width: 600px;
+    max-width: 100%;
+    transition: all 1s;
+}
+
+.container:hover{
+    border: 3px solid black;
+}
+
+.container input{
+    border-radius: .25rem;
+}
+
+.container label{
+    font-size: 20px;
+    color: peachpuff;
+}
+
+@media (max-height: 667px){
+    section{
+        top: 20px;
+    }
+
+    .col-sm{
+        height: 200px;
+    }
+    
+}
+
+#books-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0 auto;
+    flex-basis: 200px;
+}
+
+.books{
+    display: block;
+    width: 250px;
+    height: 350px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 4px black;
+    background-color: rgba(202, 186, 192, 0);
+    text-align: center;
+    transition: 1s;
+}
+
+.col-sm-12{
+ padding: 20px;
+}
+
+@media (max-height: 568px){
+
+    #h1{
+        font-size: 1.2rem;
+    }
+
+    li a{
+      font-size: 1.3rem;
+    }
+}

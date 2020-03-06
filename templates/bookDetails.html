@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Details </title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1 id="h1"> Details for {{ isbn }} </h1>
+
+    <span> {{ warning }} </span>
+
+        <div class='parent'>
+            <div class='child'>
+              {% for isbn, title, author, year in book %}
+               <p>
+                  Title: {{ title }}<br>
+                  Isbn: {{ isbn }}<br>
+                  Author: {{ author }}<br>
+                  Publication year: {{ year }}
+               </p>
+              {% endfor %}  
+            </div>
+    
+            <div class='child'>
+                <h2 id='h2'>
+                    Write a review
+                </h2>
+
+              
+              <form action="{{ url_for('book', isbn=isbn) }}" method="post">
+                  <textarea name="review" id="" cols="30" rows="10"></textarea><br>
+                <select name="book_rating" id="">
+                 <option value="1"> 1 </option>
+                 <option value="2"> 2 </option>
+                 <option value="3"> 3 </option>
+                 <option value="4"> 4 </option>
+                 <option value="5"> 5 </option>
+                </select>
+                <button type="submit" class='btn'> Submit Review </button>
+              </form>
+            </div>
+    
+            <div class='child'>
+              {% for isbn, username, avaliation, rating in showReviews %}
+                <p>
+                    User: {{ username }}<br>
+                    Analysis: {{ avaliation }}<br>
+                    Rating: {{ rating }}<br>
+                    Reviews Count: {{ reviewsCounts }}<br>
+                    Average rating: {{ averageScore }}<br>
+                </p>
+              {% endfor %}
+            </div>
+        </div>
+      
+</body>
+</html>

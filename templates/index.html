@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1 id='h1'>
+        Welcome to<br>
+        You read, you say IT!
+    </h1>
+
+<section class='col-sm-12'>
+    <div class='col-sm- span'>
+        <span>
+                Avaliate your favorite books, <br>
+                write reviews and see another's<br>
+                persons opinions about your favorite books.
+        </span>
+    </div>
+    <div class='col log-icons'>
+      <li> <a href="{{ url_for('signUp') }}"> sign up </a> </li> 
+      <li> <a href="{{ url_for('signIn') }}"> sign in </a> </li>  
+    </div>
+
+    <div class='col-sm'>
+      <h1>you read, you say it</h1>  
+    </div>
+
+    
+</section>
+
+</body>
+</html>
+ 
+
+
+       
+    
